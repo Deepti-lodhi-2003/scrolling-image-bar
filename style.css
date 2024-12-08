@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(https://plus.unsplash.com/premium_photo-1729096977046-537ebefa1928?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-image: linear-gradient(to right, #E195AB, #FFCCE1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay{
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+}
+nav{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+nav > h4{
+    width:auto;
+    padding: 5px 15px 5px 6px;
+    border-radius: 50px;
+    border: none;
+    margin: 5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+}
+nav > .first{
+    background-color: #F0D7B6;
+}
+nav > .second{
+    background-color: #F0EE89;
+}
+nav > .third{
+    background-color: #CDC8F0;
+}
+nav > .fourth{
+    background-color: #C3F0BE;
+}
+nav > .fifth{
+    background-color: #F0D5DD;
+}
+nav > .six{
+    background-color: #CDC8F0;
+}
+nav > .seven{
+    background-color: #F0EE89;
+}
+nav > .eight{
+    background-color: #C3F0BE;
+}
+nav > .nine{
+    background-color: #F0D5DD;
+}
+nav > h4 > img{
+    width: 3vw;
+    border-radius: 50%;
+}
+.contant{
+   text-align: center;
+   margin-top: 8%;
+}
+.contant>h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
+.contant>p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 1%;
+}
+.contant>button{
+    padding: 10px 20px ;
+    font-size: 20px;
+    border: 1px solid #F0EE89;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #F0EE89;
+    margin-top: 2%;
+}
+.gallary{
+    display: flex;
+    gap: 5px;
+}
+.gallary img{
+    width:130px;
+    margin-top:5.8%;
+    animation-name: slider;
+    left: 0;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@media (max-width:600px) {
+    nav{
+        margin-top: 20px;
+    }
+    nav > h4{
+        gap: 15px;
+    }
+    .contant{
+        margin-top:44%;
+     }
+     .gallary img{
+        margin-top:39%;
+        width: 170px;
+     }
+}
+
+@keyframes slider {
+    from{
+        transform: translateX(0);
+    }
+    to{
+       transform: translateX(calc(-100%));
+    }
+}
